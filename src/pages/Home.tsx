@@ -1,8 +1,11 @@
 import { useNavigate } from "react-router-dom";
 
 // TODO1: กำหนด Type สำหรับ prop 'name'
+interface UserProps {
+  name: string;
+}
 
-const Home = ({ name }) => {
+const Home = ({ name }: UserProps) => {
   const navigate = useNavigate();
 
   return (
