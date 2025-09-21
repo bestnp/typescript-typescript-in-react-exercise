@@ -1,5 +1,5 @@
 // Exercise1.tsx
-import { useState } from "react";
+import {useState} from "react";
 
 // TODO1:  ประกาศ Type ด้วย type หรือ inerface
 interface UserProps {
@@ -15,7 +15,7 @@ const Greeting = (props: UserProps) => {
   return (
     <div>
       <h1>
-        Hello {props.name}, you are {props.age} years old 👋
+        Hello {props.name}, you are {props.age} years old! 👋
       </h1>
       <p>You clicked {count} times</p>
       <button onClick={() => setCount(count + 1)}>Click Me</button>
